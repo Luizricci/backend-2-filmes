@@ -4,7 +4,8 @@
   "description": "atividade Back-End sobre filmes para a aula do dia 04/02/25",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [
     "javaScript",
