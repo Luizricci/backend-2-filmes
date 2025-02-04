@@ -5,7 +5,7 @@ const lista = new MovieList();
 
 const filme1 = new Movie('Queer', '2h 16m', '12/12/2024', 'Luca Guadagnino', 'William Lee, um americano que vive na Cidade do México, passa a maior parte dos dias completamente só, com exceção de alguns contatos com outros membros da comunidade. Seu encontro com Eugene Allerton, um ex-soldado expatriado, faz com que ele acredite que é possível ter uma conexão íntima.');
 
-lista.addMovie(filme1);
+lista.addmovie(filme1);
 
 const router = {
     addMovie: (req, res) => {
