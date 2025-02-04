@@ -15,7 +15,7 @@ const router = {
                 throw new Error('Preencha todos os campos!')
             }
             const filme = new Movie (title, duration, releaseDate, director, synopsis)
-            lista.addMovie(filme);
+            lista.addmovie(filme);
             res.status(201).json({message: "Criado com sucesso"});
         } catch (error) {
             res.status(400).json({message: "Erro ao criar o filme", error});
