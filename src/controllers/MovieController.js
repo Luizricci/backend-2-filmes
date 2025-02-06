@@ -1,5 +1,5 @@
 const Movie = require('../models/movie');
-const MovieList = require('../models/movieList');
+const MovieList = require('../models/MovieList');
 
 const lista = new MovieList();
 
