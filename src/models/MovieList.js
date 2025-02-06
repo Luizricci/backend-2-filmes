@@ -23,16 +23,8 @@ class MovieList {
         return movie;
     }
 
-    deletemovie(id) {
+    deleteMovie(id) {
         this.movies = this.movies.filter(movie => movie.id != id);
-    }
-
-    getTop10movies() {
-        return this.movies.sort((a,b) => b.plays - a.plays).slice(0, 10);
-    }
-
-    getTotalmovies(){
-        return this.movies.length;
     }
 }
 

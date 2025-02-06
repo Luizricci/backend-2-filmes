@@ -36,8 +36,7 @@ const router = {
             const id = req.params.id;
             res.status(200).json(lista.getMovieById(id));
         } catch (error) {
-            res.status(404).json({
-                message: 'Erro ao buscar o filme por id', error });
+            res.status(404).json({message: 'Erro ao buscar o filme por id', error });
         }
     },
 
@@ -45,16 +44,14 @@ const router = {
         try {
             res.status(200).json(lista.updateMovie(req.params.id, req.body));
         } catch (error) {
-            res.status(404).json('Erro ao atualizar o filme', error)
+            res.status(404).json('Erro ao atualizar', error)
         }
     },
 
     deleteMovie: (req, res) => {
         try {
             lista.deleteMovie(req.params.id);
-            res.status(200).json({
-                message: 'FIlme deletado com sucesso'
-            })
+            res.status(200).json({message: 'Filme deletado com sucesso'})
         } catch (error) {
             res.status(404).json('Erro ao deletar o filme', error);
         }
